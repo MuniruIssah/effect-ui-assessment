@@ -12,10 +12,6 @@ const Banner = ({banners}:{banners:BannerProps[]}) => {
     const handleSetActiveStep=(step:number)=>setActiveStep(step);
     return (
         <div className={'w-full h-96 p-5 md:p-10 lg:p-16 flex flex-col justify-between mb-5 lg:mb-12 bg-no-repeat bg-cover bg-center'} style={{backgroundImage:`linear-gradient(90deg, #111112 0%, rgba(17, 17, 18, 0) 100%),url(${currentBanner})`}} >
-
-            <div className={'w-full h-[20px] overflow-hidden border-2 border-effect-black'}>
-
-            </div>
             <div className={'text-2xl md:text-4xl font-bold text-white'} dangerouslySetInnerHTML={{__html:currentContent??tempBannerHtml}}/>
 
             <div className={'flex justify-between items-end'}>
