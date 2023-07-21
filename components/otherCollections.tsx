@@ -1,7 +1,6 @@
 import React from 'react';
-import {collections} from "@/utils/data";
 import OtherCollectionCard from "@/components/otherCollectionCard";
-import {CountryLeagueCardProps, OtherCollectionCardProps} from "@/types/shared";
+import {OtherCollectionCardProps} from "@/types/shared";
 
 async function getOtherCollections() {
     const res = await fetch('https://camiestas-futbol.effectstudios.co/api/v1/product-category?page=3')

@@ -31,13 +31,6 @@ const FooterTopSection=()=>{
             </FooterColumn>
             <div className={'md:hidden w-full'}>
                 <img src="/payment-partners.png" alt="partners"/>
-                {/*<Image*/}
-                {/*    src="/payment-partners.png"*/}
-                {/*    alt="Payment"*/}
-                {/*    width={260}*/}
-                {/*    height={70}*/}
-                {/*    priority*/}
-                {/*/>*/}
             </div>
         </div>
     )

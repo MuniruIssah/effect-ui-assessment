@@ -1,7 +1,6 @@
 import React from 'react';
 import PopularTCard from "@/components/popularTCard";
 import {PopularTCardProps} from "@/types/shared";
-import Controls from "@/components/controls";
 import ProductControls from "@/components/productControls";
 
 async function getPopularProducts() {

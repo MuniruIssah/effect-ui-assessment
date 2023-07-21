@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation';
 import Dropdown from "@/components/dropdown";
 import Link from "next/link";
-import {EffectLink, mainMenuLinks, mainMenuLinksII} from "@/utils/data";
+import {EffectLink, mainMenuLinksII} from "@/utils/data";
 import MobileHeader from "@/components/mobileHeader";
 import {FaCaretDown} from 'react-icons/fa'
 const LayoutHeader = () => {
