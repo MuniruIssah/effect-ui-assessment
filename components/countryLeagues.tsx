@@ -1,5 +1,4 @@
 import React from 'react';
-import {countryLeagues} from "@/utils/data";
 import CountryLeagueCard from "@/components/countryLeagueCard";
 import {CountryLeagueCardProps} from "@/types/shared";
 

@@ -16,7 +16,7 @@ const ProductCarousel = ({gallery}:{gallery:ProductCarouselProps[]}) => {
         let newValue=activeImage+1>gallery.length?activeImage:activeImage+1
         handleSetActiveImage(newValue)
     }
-    const mainImage=useMemo(()=>gallery.filter(item=>item.position==activeImage)[0].image,[activeImage])
+    const mainImage=useMemo(()=>gallery.filter(item=>item.position==activeImage)[0].image,[activeImage, gallery])
     return (
         <div className={'h-full flex flex-col gap-4'}>
             <div className={'flex-1 w-full max-h-[70vh] bg-effect-black min-h-[358px] bg-cover bg-center bg-no-repeat flex items-end justify-end p-5'} style={{backgroundImage:`url(${mainImage})`}}>
@@ -32,24 +32,6 @@ const ProductCarousel = ({gallery}:{gallery:ProductCarouselProps[]}) => {
 
 export default ProductCarousel;
 
-type ControlProps={
-    icon:string,
-    handleControl:()=>void
-}
-const Control=({icon,handleControl}:ControlProps)=>{
-    return(
-        <button className={'w-8 h-8 border border-effect-black grid place-items-center'} onClick={handleControl}>
-            <Image
-                priority
-                className={'invert'}
-                src={icon}
-                height={6}
-                width={6}
-                alt=""
-            />
-        </button>
-    );
-}
 
 type CarouselThumbProps={
     image:string,
