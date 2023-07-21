@@ -4,4 +4,4 @@ This is the result of the 3 day UI Assessment for Effect Studios
 
 ## Results
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [the Live URL](https://effect-ui-assessment-uin7.vercel.app/) to see the result.
