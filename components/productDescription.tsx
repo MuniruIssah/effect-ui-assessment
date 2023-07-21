@@ -5,7 +5,7 @@ type ProductDescription={
     description:string
 }
 const ProductDescriptionText = ({description}:ProductDescription) => {
-    const [toggleHeight,setToggleHeight]=useState(false);
+    const [toggleHeight,setToggleHeight]=useState(true);
     const handleHeightToggle=()=>setToggleHeight(prevState => !prevState);
     return (
         <div className={'flex flex-col'}>
