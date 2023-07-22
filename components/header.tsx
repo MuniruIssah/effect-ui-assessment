@@ -33,8 +33,8 @@ const HeaderTopSection=()=>{
                 />
                 <Dropdown active={"EN"}/>
             </div>
-            <div className={'flex-1 flex justify-center  py-2 overflow-x-auto'}>
-                <span className={'text-white text-xs whitespace-nowrap'}>SALES BEGIN  •  FREE SHIPPING ON ALL ORDERS</span>
+            <div className={'flex-1 flex justify-center  py-2 px-4 overflow-x-auto'}>
+                <span className={'text-white text-xs ml-28  md:ml-0 whitespace-nowrap'}>SALES BEGIN  •  FREE SHIPPING ON ALL ORDERS</span>
             </div>
             <button className={'bg-effect-green text-white flex items-center justify-center space-x-2  py-2 px-4  md:w-44'}>
                 <Image
